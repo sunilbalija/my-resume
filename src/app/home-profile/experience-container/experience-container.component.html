@@ -1,0 +1,12 @@
+<div class="row card px-0">
+    <div class="card-body border-bottom">
+        <img src="assets/images/icons8-office.svg" class="pt-2" alt="profile image">
+        <h5 class="card-title pt-5">Work Experience</h5>
+        <p class="card-text "><small class="text-muted">{{experienceDetails}}</small></p>
+    </div>
+    <div class="card-body">
+        <div *ngFor="let jobDetails of jobDetailsList">
+            <app-job-container [jobDetails]="jobDetails"></app-job-container>
+        </div>
+    </div>
+</div>

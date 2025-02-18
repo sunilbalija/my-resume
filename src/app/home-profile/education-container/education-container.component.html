@@ -1,0 +1,13 @@
+
+<div class="row card px-0">
+    <div class="card-body border-bottom">
+        <img src="assets/images/icons8-education.svg" class="pt-2" alt="Education image">
+        <h5 class="card-title pt-5">Education</h5>
+        <p class="card-text "><small class="text-muted">{{educationDescription}}</small></p>
+    </div>
+    <div class="card-body">
+        <div *ngFor="let jobDetails of educationDetailsList">
+            <app-job-container [jobDetails]="jobDetails"></app-job-container>
+        </div>
+    </div>
+</div>

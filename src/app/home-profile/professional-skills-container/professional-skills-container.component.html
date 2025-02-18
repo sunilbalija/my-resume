@@ -1,0 +1,38 @@
+<div class="row card px-0">
+    <div class="card-body border-bottom">
+        <img src="assets/images/icons8-skills.svg" class="pt-2" alt="Skills image">
+        <h5 class="card-title pt-5">Professional Skills</h5>
+        <p class="card-text "><small class="text-muted">{{skillsDescription}}</small></p>
+    </div>
+    <div class="card-body">
+            <p class="">Frontend Skills</p>
+            <div class="grid ms-2 ps-2" >
+                <p *ngFor="let skillArea of fESkillsList" class="badge bg-white work-badge"><i class="bi bi-check2-circle fs-6 pr-2 float-start"></i><small class="text-muted">{{skillArea}}</small></p>
+            </div>
+
+            <p class="">Frameworks</p>
+            <div class="grid ms-2 ps-2" >
+                <p *ngFor="let skillArea of frameWorksList" class="badge bg-white work-badge"><i class="bi bi-check2-circle fs-6 pr-2 float-start"></i><small class="text-muted">{{skillArea}}</small></p>
+            </div>
+
+            <p class="">BackEnd Skills</p>
+            <div class="grid ms-2 ps-2" >
+                <p *ngFor="let skillArea of bESkillsList" class="badge bg-white work-badge"><i class="bi bi-check2-circle fs-6 pr-2 float-start"></i><small class="text-muted">{{skillArea}}</small></p>
+            </div>
+
+            <p class="">Data Base</p>
+            <div class="grid ms-2 ps-2" >
+                <p *ngFor="let skillArea of databaseSkillsList" class="badge bg-white work-badge"><i class="bi bi-check2-circle fs-6 pr-2 float-start"></i><small class="text-muted">{{skillArea}}</small></p>
+            </div>
+
+            <p class="">Testing</p>
+            <div class="grid ms-2 ps-2" >
+                <p *ngFor="let skillArea of testingSkillsList" class="badge bg-white work-badge"><i class="bi bi-check2-circle fs-6 pr-2 float-start"></i><small class="text-muted">{{skillArea}}</small></p>
+            </div>
+
+            <p class="">Tools</p>
+            <div class="grid ms-2 ps-2" >
+                <p *ngFor="let skillArea of softWareToolsList" class="badge bg-white work-badge"><i class="bi bi-check2-circle fs-6 pr-2 float-start"></i><small class="text-muted">{{skillArea}}</small></p>
+            </div>
+    </div>
+</div>
