@@ -1,5 +1,7 @@
 # MyResume
 
+This appliation is developed to display Sunil Balija CV details. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
 ## Development server
