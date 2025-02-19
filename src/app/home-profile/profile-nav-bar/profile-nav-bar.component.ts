@@ -13,7 +13,7 @@ import { ContactModelComponent } from './contact-model/contact-model.component';
 })
 export class ProfileNavBarComponent {
 
-
+  isNavbarCollapsed = true;
   testModal: bootstrap.Modal | undefined;
 
   constructor(private modalService: NgbModal,) { }
