@@ -5,3 +5,13 @@
     width: 20%;
     margin-right: 25px;
 }
+
+@media only screen and (max-width: 900px) {
+    .work-badge {
+        border: 1px solid lightgray;
+        color: inherit;
+        font-weight: normal;
+        width: 40%;
+        margin-right: 25px;
+    }
+}

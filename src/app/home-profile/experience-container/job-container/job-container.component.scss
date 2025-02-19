@@ -11,3 +11,15 @@
     width: 80%;
     float: left;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .work-badge {
+        border: 1px solid lightgray;
+    color: inherit;
+    font-weight: normal;
+    width: 20%;
+    display: inline;
+        float: inherit;
+}
+}

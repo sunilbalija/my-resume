@@ -20,7 +20,16 @@
 .image-card-body {
     padding: 0;
 }
-// img {
-//     padding-right: 1.8rem !important;
-//     padding-left: 1.8rem !important;
-// }
+@media only screen and (max-width: 900px) { 
+    .profile-img-mobile {
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+    .profile-details-mobile{
+        padding-left: 0;
+    }
+    .email-mobile {
+        margin-bottom: 25px;
+    }
+}
+

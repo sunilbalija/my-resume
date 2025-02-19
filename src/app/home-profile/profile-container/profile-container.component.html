@@ -1,21 +1,22 @@
-<span class="badge bg-white work-badge"><span class="available-status">●</span>Available for work</span>
-<h1 class="profile-name">Sunil Balija</h1>
-<p class="profile-title">Senior Web Developer</p>
-<!-- <p class="profile-location">Location: San Antonio, Texas, USA</p> -->
- <div>
-    <button class="btn btn-dark profile-buttons" (click)="openEmailApp()"><i class="bi bi-envelope fs-6"></i>Send Email</button>
-    <button class="btn btn-outline-secondary profile-buttons" (click)="downloadResume()"><i class="bi bi-download fs-6"></i>Download CV</button>
- </div>
+<div class="card-body text-center">
+    <span class="badge bg-white work-badge"><span class="available-status">●</span>Available for work</span>
+    <h1 class="profile-name">Sunil Balija</h1>
+    <p class="profile-title">Senior Web Developer</p>
+     <div>
+        <button class="btn btn-dark profile-buttons email-mobile" (click)="openEmailApp()"><i class="bi bi-envelope fs-6"></i>Send Email</button>
+        <button class="btn btn-outline-secondary profile-buttons" (click)="downloadResume()"><i class="bi bi-download fs-6"></i>Download CV</button>
+     </div>
+</div>
 
-<div class="row mt-5">
-    <div class="col-sm-4 ps-0">
+<div class="row mt-5 ">
+    <div class="col-sm-4 ps-0 profile-img-mobile">
         <div class="card">
         <div class="image-card-body">
-            <img src="assets/images/main-profile.JPG" class="main-profile-image" alt="profile image">
+            <img src="assets/images/main-profile.jpeg" class="main-profile-image" alt="profile image">
         </div>
         </div>
     </div>
-    <div class="col-sm-8 height-100 pe-0">
+    <div class="col-sm-8 height-100 pe-0 profile-details-mobile">
         <div class="card">
             <div class="card-body">
                 <img src="assets/images/icons8-profile.svg" class="pt-2" alt="profile image">
@@ -30,13 +31,13 @@
             <h6 class="card-title text-center mb-0 text-muted">Worked With</h6>
         </div>
         <div class="card-body text-center">
-            <img src="assets/images/icons8-angular.svg" class="px-4" alt="Angular Image">
-            <img src="assets/images/icons8-typescript.svg" class="px-4" alt="Typescript Image">
-            <img src="assets/images/icons8-bootstrap.svg" class="px-4" alt="Bootstrap Image">
-            <img src="assets/images/icons8-css.svg" class="px-4" alt="CSS Image">
-            <img src="assets/images/icons8-javascript.svg" class="px-4" alt="JavaScript Image">
-            <img src="assets/images/icons8-java.svg" class="px-4" alt="Java Image">
-            <img src="assets/images/icons8-oracle.svg" class="px-4" alt="Oracle Image">
+            <img src="assets/images/icons8-angular.svg" matTooltip="Angular" class="px-4" alt="Angular Image">
+            <img src="assets/images/icons8-typescript.svg" matTooltip="Typescript" class="px-4" alt="Typescript Image">
+            <img src="assets/images/icons8-bootstrap.svg" matTooltip="Bootstrap" class="px-4" alt="Bootstrap Image">
+            <img src="assets/images/icons8-css.svg" matTooltip="CSS" class="px-4" alt="CSS Image">
+            <img src="assets/images/icons8-javascript.svg" matTooltip="JavaScript" class="px-4" alt="JavaScript Image">
+            <img src="assets/images/icons8-java.svg" matTooltip="Java" class="px-4" alt="Java Image">
+            <img src="assets/images/icons8-oracle.svg" matTooltip="Oracle" class="px-4" alt="Oracle Image">
         </div>
     </div>
 </div>

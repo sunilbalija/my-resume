@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import * as bootstrap from 'bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ContactModelComponent } from './contact-model/contact-model.component';
+
+
 
 @Component({
   selector: 'app-profile-nav-bar',
@@ -11,13 +16,10 @@ export class ProfileNavBarComponent {
 
   testModal: bootstrap.Modal | undefined;
 
-  constructor() { }
+  constructor(private modalService: NgbModal,) { }
 
-  openModal(){
-    console.log('openModal');
-    
-    this.testModal = new bootstrap.Modal('testModal',{} ) 
-    this.testModal?.show()
+
+  openModel() {
+    this.modalService.open(ContactModelComponent);
   }
-
 }

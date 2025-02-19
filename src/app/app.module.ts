@@ -11,6 +11,12 @@ import { JobContainerComponent } from './home-profile/experience-container/job-c
 import { EducationContainerComponent } from './home-profile/education-container/education-container.component';
 import { LanguagesContainerComponent } from './home-profile/languages-container/languages-container.component';
 import { ProfessionalSkillsContainerComponent } from './home-profile/professional-skills-container/professional-skills-container.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ContactModelComponent } from './home-profile/profile-nav-bar/contact-model/contact-model.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,11 +28,17 @@ import { ProfessionalSkillsContainerComponent } from './home-profile/professiona
     JobContainerComponent,
     EducationContainerComponent,
     LanguagesContainerComponent,
-    ProfessionalSkillsContainerComponent
+    ProfessionalSkillsContainerComponent,
+    ContactModelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule,
+    BrowserAnimationsModule,
+    ClipboardModule,
+    MatDialogModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

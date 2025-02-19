@@ -1,3 +1,5 @@
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+html, body { height: 100%; background-color: $gray-100; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
